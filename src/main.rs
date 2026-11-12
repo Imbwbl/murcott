@@ -137,27 +137,6 @@ impl eframe::App for MurcottApp {
                         });
                     });
                 });
-            /*egui::Grid::new("grid").striped(true).show(ui, |ui| {
-                ui.heading("Track");
-                ui.heading("Title");
-                ui.heading("Artist");
-                ui.heading("Album");
-                ui.heading("Length");
-                ui.heading("File name");
-                ui.end_row();
-
-                ui.label("Second row, first column");
-                ui.label("Second row, second column");
-                ui.label("Second row, third column");
-                ui.end_row();
-
-                ui.horizontal(|ui| {
-                    ui.label("Same");
-                    ui.label("cell");
-                });
-                ui.label("Third row, second column");
-                ui.end_row();
-            });*/
         });
     }
 }
