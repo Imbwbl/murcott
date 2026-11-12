@@ -1,5 +1,4 @@
-use anyhow::Result;
-use eframe::egui::{self};
+use eframe::egui;
 use egui_extras::Column;
 
 
@@ -12,7 +11,7 @@ struct Song {
     filename: &'static str,
 }
 
-fn main() -> Result<()> {
+fn main()  {
     let native_options = eframe::NativeOptions {
         viewport: egui::ViewportBuilder::default().with_inner_size(egui::Vec2::new(1080.0, 540.0)),
         ..Default::default()
@@ -22,7 +21,6 @@ fn main() -> Result<()> {
         native_options,
         Box::new(|cc| Ok(Box::new(MurcottApp::new(cc)))),
     );
-    Ok(())
 }
 
 #[derive(Default)]
@@ -93,7 +91,7 @@ impl eframe::App for MurcottApp {
                 .column(Column::remainder().resizable(true))
                 .header(20.0, |mut header| {
                     for header_name in headers {
-                        if headers.last().unwrap().eq(&header_name) {
+                        if headers.last() == Some(&header_name) {
                             header.col(|ui| {
                                 ui.with_layout(egui::Layout::left_to_right(egui::Align::Center), |ui| {
                                     ui.heading(header_name);
