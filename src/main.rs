@@ -1,5 +1,5 @@
 use anyhow::Result;
-use eframe::egui::{self, Panel, UiKind::LeftPanel, panel, viewport};
+use eframe::egui::{self};
 use egui_extras::Column;
 
 
@@ -29,7 +29,7 @@ fn main() -> Result<()> {
 struct MurcottApp {}
 
 impl MurcottApp {
-    fn new(cc: &eframe::CreationContext<'_>) -> Self {
+    fn new(_cc: &eframe::CreationContext<'_>) -> Self {
         // Customize egui here with cc.egui_ctx.set_fonts and cc.egui_ctx.set_global_style.
         // Restore app state using cc.storage (requires the "persistence" feature).
         // Use the cc.gl (a glow::Context) to create graphics shaders and buffers that you can use
@@ -39,7 +39,7 @@ impl MurcottApp {
 }
 
 impl eframe::App for MurcottApp {
-    fn ui(&mut self, ui: &mut egui::Ui, frame: &mut eframe::Frame) {
+    fn ui(&mut self, ui: &mut egui::Ui, _frame: &mut eframe::Frame) {
 
         let headers = [
             "Track",
@@ -108,7 +108,7 @@ impl eframe::App for MurcottApp {
                         }
                     }
                 })
-                .body(|mut body| {
+                .body(|body| {
                     body.rows(20.0, songs.len(), |mut row| {
                         let row_index = row.index();
                         let song = &songs[row_index];
