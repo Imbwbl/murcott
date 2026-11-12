@@ -2,6 +2,12 @@
 name = "murcott"
 version = "0.1.0"
 edition = "2024"
+description = "murcott is a music player inspired by clementine, written in Rust."
+repository = "https://github.com/Imbwbl/murcott"
+readme = "README.md"
+license = "GPL-3.0-only"
+keywords = ["gui", "egui", "eframe", "rust", "music", "audio", "midi"]
+categories = ["music", "audio", "gui"]
 
 [dependencies]
 anyhow = "1.0.104"
