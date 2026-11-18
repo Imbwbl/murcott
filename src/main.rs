@@ -150,6 +150,20 @@ impl eframe::App for MurcottApp {
             },
         ];
 
+        egui::MenuBar::new().ui(ui, |ui| {
+            ui.menu_button("File", |ui| {
+                if ui.button("Settings").clicked() {
+
+                }
+                if ui.button("Download musics").clicked() {
+                    
+                }
+                if ui.button("Quit").clicked() {
+                    ui.send_viewport_cmd(egui::ViewportCommand::Close);
+                }
+            });
+        });
+
         egui::Panel::bottom("bottom_pannel")
             .resizable(true)
             .show(ui, |ui| {
