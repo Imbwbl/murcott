@@ -11,8 +11,10 @@ categories = ["music", "audio", "gui"]
 
 [dependencies]
 anyhow = "1.0.104"
+chrono = "0.4.45"
 eframe = "0.37.0"
 egui_extras = "0.37.0"
+lofty = { version = "0.25.5", features = ["serde"] }
 
 
 [lints.clippy]
