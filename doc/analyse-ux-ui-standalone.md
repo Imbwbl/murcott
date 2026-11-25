@@ -1,7 +1,7 @@
 # UX/UI Analysis - Standalone Player
 
 ## 1. Introduction
-This document is the UX/UI analysis of the three requested features of the standalone player (CdC point a): application startup, setting the location of local content, and browsing local content.
+This document is the UX/UI analysis of the three requested features of the standalone player: application startup, setting the location of local content, and browsing local content.
 
 ## 2. Application startup
 ### 2.1 First launch
@@ -19,7 +19,7 @@ This document is the UX/UI analysis of the three requested features of the stand
 
 ## 3. Setting the location of local content
 ### 3.1 Initial choice
-(see 2.1)
+([see 2.1](#21-first-launch))
 
 ### 3.2 Changing it later
 - Where the user goes (File > Settings): File > Settings
