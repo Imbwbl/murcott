@@ -2,14 +2,14 @@ use eframe::egui;
 
 use crate::{song::Song, ui::app::MurcottApp};
 
-pub fn build(app: &mut MurcottApp, ui: &mut egui::Ui, songs: &[Song]) {
+pub fn build(app: &mut MurcottApp, ui: &mut egui::Ui, songs: Vec<Song>) {
     egui::Panel::bottom("bottom_pannel")
             .resizable(true)
             .show(ui, |ui| {
                 ui.columns(3, |columns| {
                     columns[0].vertical(|ui| {
-                        ui.strong(songs[0].title);
-                        ui.label(songs[0].artist);
+                        ui.strong(&songs[0].title);
+                        ui.label(&songs[0].artist);
                     });
 
                     /*columns[1].vertical_centered(|ui| {
