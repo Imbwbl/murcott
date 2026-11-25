@@ -32,3 +32,9 @@ I'm also building the P2P server. *What is a P2P server?* You need a server to k
 The main objective is to learn about **distributed systems**: every student in the class is building an app like this one, and all of them must work together.
 
 To get there, I had to learn about egui for the UI/UX, P2P for downloading music between users, UDP for communication, Ed25519 to secure the app, and Protobuf to define message schemas and compile them. I will definitely use all of these in the future.
+
+- Work in a team
+- Write user stories for the analysis of the app
+- Work with a log journal
+- Manage deliveries
+- Make great use of AI
